@@ -1,0 +1,111 @@
+:root {
+  --theme-color: black;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--theme-color);
+  transition: background-color 0.5s linear;
+  min-height: 100vh;
+  font-size: 16px;
+  color: oldlace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-header, .App-footer {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-box {
+  background-color: oldlace;
+  color: var(--theme-color);
+  transition: color 0.5s linear;
+  min-height: 150px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  row-gap: 40px;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+#text {
+  margin: 0;
+  font-size: 28px;
+} 
+
+#author {
+  margin: 0;
+  font-size: 20px;
+}
+
+.quote-actions {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tweet-quote {
+  color: var(--theme-color);
+  transition: color 0.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+}
+
+button {
+  background-color: var(--theme-color);
+  transition: background-color 1s linear;
+  color: oldlace;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 180px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover, #tweet-quote:hover  {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+footer a {
+  color: oldlace;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
