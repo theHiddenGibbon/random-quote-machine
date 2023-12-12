@@ -68,7 +68,7 @@ function App() {
          <div className="quote-actions">
            <a className="fa-brands fa-square-twitter"
              title="share this quote on twitter"
-             href={encodeURI(`https://twitter.com/intent/tweet?text="${quote}" - ${author}`)} 
+             href={encodeURI(`https://twitter.com/intent/tweet?text="${quote}" ${author}`)} 
              id="tweet-quote" target="_blank" rel="noreferrer">
            </a>
            <button id="new-quote" onClick={() => newQuote()}>
